@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>Jquery Carousel</title>
+    <style type="text/css">
+      .slide{float:left; position:absolute; top:0; left:0; width:100%; height:100%; overflow:hidden;}
+      .slide.media-presnece{position:relative; z-index:1;}
+      .slide:not(.vertical) .slide_main{float:left; width:100%; height:100%; position:relative; top:0; right:100%; bottom:0%; z-index:0;}
+      .slide.vertical .slide_main{float:left; width:100%; height:100%; position:relative; right:0%; bottom:100%; z-index:0;}
+      ul.slide_buttons{
+          list-style-type: none;
+          position: absolute;
+          background-color: rgba(63, 63, 63, .47);
+          padding: 2% 1% 0;
+          border-radius: 12px;
+        top:50%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+          -webkit-transition: all 400ms cubic-bezier(1, 0, 0, 1);
+          -moz-transition: all 400ms cubic-bezier(1, 0, 0, 1);
+          -o-transition: all 400ms cubic-bezier(1, 0, 0, 1);
+          transition: all 400ms cubic-bezier(1, 0, 0, 1);
+          -webkit-transition-timing-function: cubic-bezier(1, 0, 0, 1);
+          -moz-transition-timing-function: cubic-bezier(1, 0, 0, 1);
+          -o-transition-timing-function: cubic-bezier(1, 0, 0, 1);
+          transition-timing-function: cubic-bezier(1, 0, 0, 1);
+      }
+      ul.slide_buttons li{
+          height: 16px;
+          width: 16px;
+        cursor:pointer;
+          border: 2px solid rgba(219, 219, 219, .7);
+          transition: all .5s ease;
+          margin-bottom: 18px;
+          border-radius: 15px;
+          display: block;
+      }
+      ul.slide_buttons li:hover span{display:block;}
+      ul.slide_buttons li.active{background-color: #b50e0e;}
+      .slide_element{float: left; width:100%; height: 100%; text-align:center;}
+      .slide_content{ width: 70%; position:relative; top:50%; left:50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
+      .slide_content h3{text-transform: uppercase; color: #c11f1f; font-size:75%;}
+      .slide_content p{font-weight: 300; font-size: 70%; font-family: proximaLight;}
+      .slide_image{float:left; width:100%; height:100%;}
+      .slide_arrow_container{float:left; width:100%; height:100%; position:absolute; z-index:1;}
+      .slide_arrow{width:48px; height:48px; opacity:0.6; cursor:pointer; display:none;}
+      .slide_arrow:hover{ background-position:0px 0px; opacity:0.8; }
+      .left_arrow{float:left; left:0%; margin:18.5% 0px 0px 10px; background:url(http://gharsearch.com/images/slider-nav-left.png); background-position:0px -72px;}
+      .right_arrow{float:right; right:0%; margin:18.5% 10px 0px 0px; background:url(http://gharsearch.com/images/slider-nav-right.png); background-position:0px -72px; }
+    </style>
+  </head>
+  <body>
+
+    <div class="slide">
+      <div id="left_slider" class="slide_main">
+        <div class="slide_element">
+          <div class="slide_content">
+            <h3>Slide one</h3>
+            <p>Hi! this is slide 1</p>
+          </div>
+        </div>
+        <div class="slide_element">
+          <div class="slide_content">
+            <h3>Slide two</h3>
+            <p>Hi! this is slide 2</p>
+          </div>
+        </div>
+        <div class="slide_element">
+          <div class="slide_content">
+            <h3>Slide three</h3>
+            <p>Hi! this is slide 3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="slide_buttons">
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="jquery-carousel.js"></script>
+  </body>
+  </html>
