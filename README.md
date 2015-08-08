@@ -47,7 +47,7 @@ Add w2-vertical-carousel="true" to w2-carousel and its done.
 ## Sliding it Vertically
 Add w2-vertical-carousel="true" to w2-carousel and its done.
 ```
-<div w2-carousel w2-vertical-carousel>
+<div w2-carousel w2-vertical-carousel="true">
 	<div w2-carousel-main id="w2-carousel">
 		<div w2-carousel-element>
 			<div w2-carousel-content>Demo slide</div>
