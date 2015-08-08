@@ -1,0 +1,42 @@
+[w2-carousel]{float:left; position:relative; top:0; left:0; width:100%; height:100%; overflow:hidden;}
+[w2-carousel]:not([w2-vertical-carousel="true"]) [w2-carousel-main]{float:left; width:100%; height:100%; position:relative; top:0; right:100%; bottom:0%; z-index:0;}
+[w2-carousel][w2-vertical-carousel="true"] [w2-carousel-main]{float:left; width:100%; height:100%; position:relative; right:0%; bottom:100%; z-index:0;}
+ul[w2-carousel-buttons]{
+  float:left;
+  list-style-type: none;
+  position:absolute; 
+  left:50%;
+  -webkit-transform: translate(-50%,-120%);
+  -ms-transform: translate(-50%,-120%);
+  transform: translate(-50%,-120%);
+  width:auto;
+  background-color: rgba(63, 63, 63, .47);
+  padding:0 5px 0 5px;
+  border-radius: 12px;
+  bottom:0%;
+  z-index:100;
+  text-align:center;
+}
+ul[w2-carousel-buttons] li{
+    height: 8px;
+    width: 8px;
+  cursor:pointer;
+    border: 2px solid rgba(219, 219, 219, .7);
+    transition: all .5s ease;
+    border-radius: 100%;
+    margin:5px;
+    display: inline-block;
+}
+ul[w2-carousel-buttons] li:hover span{display:block;}
+ul[w2-carousel-buttons] li.active{background-color: #b50e0e;}
+[w2-carousel-element]{float: left; width:100%; height: 100%; text-align:center;}
+[w2-carousel-element]:nth-child(even){background:#e0e0e0;}
+[w2-carousel-element]:nth-child(odd){background:#f0f0f0;}
+[w2-carousel-content]{float:left; width: 100%; position:relative; top:50%; left:50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
+[w2-carousel-content] h3, [w2-carousel-content] p{text-align:center;}
+
+[w2-carousel-arrow-container]{float:left; width:100%; height:100%; position:absolute; z-index:1;}
+[w2-carousel-arrow]{width:48px; height:48px; opacity:0.6; cursor:pointer; display:none;}
+[w2-carousel-arrow]:hover{ background-position:0px 0px; opacity:0.8; }
+.left-arrow{float:left; left:0%; margin:18.5% 0px 0px 10px; background:url(http://gharsearch.com/images/w2-carouselr-nav-left.png); background-position:0px -72px;}
+.right-arrow{float:right; right:0%; margin:18.5% 10px 0px 0px; background:url(http://gharsearch.com/images/w2-carouselr-nav-right.png); background-position:0px -72px; }

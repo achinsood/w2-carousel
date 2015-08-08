@@ -27,6 +27,7 @@ W2-Carousel is one of the best and the simplest Carousels built over JQuery and 
 * w2-carousel-element - Defines a single slide and occupies the entire width and height of the viewport(w2-carousel).
 * w2-carousel-content - The container of the content of a slide which remains in the center of the slide. If you do not require the content in the center, then you may emebed your slide content directly inside w2-carousel-element.
 * w2-carousel-buttons - Defines an unordered list for carousel buttons which appear as an overlay over w2-carousel at its bottom.
+* w2-carousel-pause-onhover - Set w2-carousel-pause-onhover="true" to pause the carousel when the user brings his mouse over the carousel viewport.
 ## Adding buttons to help you navigate the slides
 Add w2-vertical-carousel="true" to w2-carousel and its done.
 ```
