@@ -1,5 +1,5 @@
 # JQuery W2 Carousel
-W2-Carousel is one of the best and the simplest Carousels built over JQuery and JQuery Touchswipe. Just include the files, add the required classes to your code and see your carousel working like a magic
+W2 Carousel is one of the best and the simplest Carousels built over JQuery and JQuery Touchswipe. Just include the files, add the required classes to your code and see your carousel working like a magic
 ## Usage
 * Add dependencies(JQuery, JQuery Touchswipe) to your code if your application does not already depend on any of these.
 ```
