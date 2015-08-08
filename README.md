@@ -21,15 +21,14 @@ W2-Carousel is one of the best and the simplest Carousels built over JQuery and 
 	</div>
 </div>
 ```
-## Compulsary Options
+## Options
 * w2-carousel - The viewport of the carousel which occupies the entire width and height of the container within which you embed it. So make sure that you set the width and height of the container element.
 * w2-carousel-main - The container containing all the slides.
 * w2-carousel-element - Defines a single slide and occupies the entire width and height of the viewport(w2-carousel).
-## Additional Options
 * w2-carousel-content - The container of the content of a slide which remains in the center of the slide. If you do not require the content in the center, then you may emebed your slide content directly inside w2-carousel-element.
 * w2-carousel-buttons - Defines an unordered list for carousel buttons which appear as an overlay over w2-carousel at its bottom.
 ## Adding buttons to help you navigate the slides
-* Add w2-vertical-carousel="true" to w2-carousel and its done.
+Add w2-vertical-carousel="true" to w2-carousel and its done.
 ```
 <div w2-carousel>
 	<div w2-carousel-main id="w2-carousel">
@@ -43,7 +42,7 @@ W2-Carousel is one of the best and the simplest Carousels built over JQuery and 
 </div>
 ```
 ## Sliding it Vertically
-* Add w2-vertical-carousel="true" to w2-carousel and its done.
+Add w2-vertical-carousel="true" to w2-carousel and its done.
 ```
 <div w2-carousel w2-vertical-carousel>
 	<div w2-carousel-main id="w2-carousel">
