@@ -6,20 +6,20 @@ W2-Carousel is one of the best and the simplest Carousels built over JQuery and 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.9/jquery.touchSwipe.min.js"></script>
 ```
-* Add w2-carousel.css, w2-carousel.js to your code.
+* Download the plugin and add w2-carousel.css, w2-carousel.js to your code.
 ```
 <link href="w2-carousel.css" rel="stylesheet" type="text/css" />
 <script src="w2-carousel.js"></script>
 ```
 * Add the following code where you want to add the carousel
 ```
-<div class="w2-carousel">
-	<div id="w2-carousel" class="w2-carousel-main">
-		<div class="w2-carousel-element">
-			<div class="w2-carousel-content"></div>
+<div w2-carousel>
+	<div w2-carousel-main id="w2-carousel">
+		<div w2-carousel-element>
+			<div w2-carousel-content>Demo slide</div>
 		</div>
 	</div>
-	<ul class="w2-carousel-buttons">
+	<ul w2-carousel-buttons>
 		<li></li>
 	</ul>
 </div>
