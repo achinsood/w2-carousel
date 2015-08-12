@@ -210,11 +210,11 @@ var w2_carousel_plugin = {
 				obj.containers[container] = {id : container};
 				clearInterval(obj.containers[container].carousel);
 				var slides = $(this).find("[w2-carousel-element]").length,
-				w2_carousel_child = $(this).find("[w2-carousel-element]:last-child").find("[w2-carousel-element-child]"),
+				w2_carousel_child = $(this).find("[w2-carousel-element]:first-child").find("[w2-carousel-element-child]"),
 				w2_carousel_last_child = $(this).find("[w2-carousel-element]:last-child").find("[w2-carousel-element-child]");
-				var append_w2_carousel_content = "<div w2-carousel-element wp-carousel-last-element>"+$(this).find("[w2-carousel-element]:last-child").html()+"</div>";
+				var append_w2_carousel_content = "<div w2-carousel-element wp-carousel-last-element>"+$(this).find("[w2-carousel-element]:first-child").html()+"</div>";
 				var prepend_w2_carousel_content = "<div w2-carousel-element wp-carousel-first-element>"+$(this).find("[w2-carousel-element]:last-child").html()+"</div>";
-				var last_element_length = $(this).find("[last_element]").length;
+				var last_element_length = $(this).find("[wp-carousel-last-element]").length;
 				if(!last_element_length)
 				{
 					$(this).append(append_w2_carousel_content);
@@ -234,7 +234,6 @@ var w2_carousel_plugin = {
 					}
 					else
 					{
-						console.log($(this).find("[wp-carousel-last-element]").prev());
 						$(this).find("[wp-carousel-last-element]").prev().css({"marginRight":-(($(this).find("[w2-carousel-element]").outerWidth()-$(this).find("[w2-carousel-element-child]").css("margin-right").replace("px", ""))*((w2_carousel_child.length-w2_carousel_last_child.length)/w2_carousel_child.length))+"px"});
 					}
 				}
