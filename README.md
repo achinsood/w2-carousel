@@ -1,5 +1,7 @@
-# W2-Carousel
-W2-Carousel is one of the best and the simplest Carousels built over JQuery and JQuery Touchswipe. Just include the files, add the required classes to your code and see your carousel working like a magic
+# JQuery W2 Carousel
+W2 Carousel is one of the best and the simplest Carousels built over JQuery and JQuery Touchswipe. Just include the files, add the required classes to your code and see your carousel working like a magic
+## Live Demo
+View a live demo of [W2 Carousel](http://webwaresindia.com/new/plugins/carousel)
 ## Usage
 * Add dependencies(JQuery, JQuery Touchswipe) to your code if your application does not already depend on any of these.
 ```
@@ -28,8 +30,9 @@ W2-Carousel is one of the best and the simplest Carousels built over JQuery and 
 * w2-carousel-content - The container of the content of a slide which remains in the center of the slide. If you do not require the content in the center, then you may emebed your slide content directly inside w2-carousel-element.
 * w2-carousel-buttons - Defines an unordered list for carousel buttons which appear as an overlay over w2-carousel at its bottom.
 * w2-carousel-pause-onhover - Set w2-carousel-pause-onhover="true" to pause the carousel when the user brings his mouse over the carousel viewport.
+
 ## Adding buttons to help you navigate the slides
-Add w2-vertical-carousel="true" to w2-carousel and its done.
+* Add w2-vertical-carousel="true" to w2-carousel and its done.
 ```
 <div w2-carousel>
 	<div w2-carousel-main id="w2-carousel">
@@ -42,10 +45,25 @@ Add w2-vertical-carousel="true" to w2-carousel and its done.
 	</ul>
 </div>
 ```
+##Variable Width Slider
+* Add as many w2-carousel-element-child as you want inside each slide and the carousel starts sliding on child at a time.
+```
+<div w2-carousel>
+	<div w2-carousel-main id="w2-carousel">
+		<div w2-carousel-element>
+			<div w2-carousel-element-child>slide Child 1</div>
+			<div w2-carousel-element-child>slide Child 1</div>
+		</div>
+	</div>
+	<ul w2-carousel-buttons>
+		<li></li>
+	</ul>
+</div>
+```
 ## Sliding it Vertically
 Add w2-vertical-carousel="true" to w2-carousel and its done.
 ```
-<div w2-carousel w2-vertical-carousel>
+<div w2-carousel w2-vertical-carousel="true">
 	<div w2-carousel-main id="w2-carousel">
 		<div w2-carousel-element>
 			<div w2-carousel-content>Demo slide</div>
