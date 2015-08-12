@@ -47,6 +47,7 @@ View a live demo of [W2 Carousel](http://webwaresindia.com/new/plugins/carousel)
 ```
 ##Variable Width Slider
 * Add as many w2-carousel-element-child as you want inside each slide and the carousel starts sliding on child at a time.
+```
 <div w2-carousel>
 	<div w2-carousel-main id="w2-carousel">
 		<div w2-carousel-element>
@@ -58,6 +59,7 @@ View a live demo of [W2 Carousel](http://webwaresindia.com/new/plugins/carousel)
 		<li></li>
 	</ul>
 </div>
+```
 ## Sliding it Vertically
 Add w2-vertical-carousel="true" to w2-carousel and its done.
 ```
