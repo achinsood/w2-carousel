@@ -32,7 +32,7 @@ View a live demo of [W2 Carousel](http://webwaresindia.com/new/plugins/carousel)
 * w2-carousel-pause-onhover - Set w2-carousel-pause-onhover="true" to pause the carousel when the user brings his mouse over the carousel viewport.
 
 ## Adding buttons to help you navigate the slides
-Add w2-vertical-carousel="true" to w2-carousel and its done.
+* Add w2-vertical-carousel="true" to w2-carousel and its done.
 ```
 <div w2-carousel>
 	<div w2-carousel-main id="w2-carousel">
@@ -45,6 +45,19 @@ Add w2-vertical-carousel="true" to w2-carousel and its done.
 	</ul>
 </div>
 ```
+##Variable Width Slider
+* Add as many w2-carousel-element-child as you want inside each slide and the carousel starts sliding on child at a time.
+<div w2-carousel>
+	<div w2-carousel-main id="w2-carousel">
+		<div w2-carousel-element>
+			<div w2-carousel-element-child>slide Child 1</div>
+			<div w2-carousel-element-child>slide Child 1</div>
+		</div>
+	</div>
+	<ul w2-carousel-buttons>
+		<li></li>
+	</ul>
+</div>
 ## Sliding it Vertically
 Add w2-vertical-carousel="true" to w2-carousel and its done.
 ```
